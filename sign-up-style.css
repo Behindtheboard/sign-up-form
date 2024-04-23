@@ -31,7 +31,7 @@ body {
 
 #logo-strip {
     position: absolute;
-    top: 2em;
+    top: 2.5em;
     width: 30%;
     font-size: 4rem;
     font-family: norse-bold, sans-serif;
@@ -54,7 +54,7 @@ body {
 
 #odin-logo + p {
     font-size: 1.25em;
-    padding-top: 20px;
+    padding-top: .3em;
 }
 
 #right-container {
@@ -66,15 +66,39 @@ body {
 }
 
 #top-container, #mid-continer, #bot-container {
+    display: flex;
     flex: auto;
     flex-direction: column;
+    padding: 1.5em;
 }
 
 #top-container {
     background-color: rgb(232, 232, 232);
     justify-content: flex-end;
+    height: .5em;
+}
+
+#top-container > div {
+    padding: .5em;
 }
 
 #mid-container {
-    box-shadow: 10px 5px 5px rgb(202, 202, 202);
+    padding: 1.5em;
+    box-shadow: 0px 5px 5px rgb(202, 202, 202);
+}
+
+#bot-container {
+    font-size: 1rem;
+    align-items: flex-start;
+}
+
+button {
+    font-size: 1rem;
+    padding: 1em 3em 1em 3em;
+    border-radius: .5rem;
+    border-width: 0;
+    background-color: #596D48;
+    color: white;
+    box-shadow: 0px 5px 5px rgb(202, 202, 202);
+    margin: 1em 0em 2em 0em;
 }

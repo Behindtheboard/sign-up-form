@@ -35,7 +35,7 @@ body {
 
 #logo-strip {
     position: absolute;
-    top: 30vh;
+    top: 30%;
     font-size: 5rem;
     font-family: norse-bold, sans-serif;
     background-color: rgba(0, 0, 0, 0.50);
@@ -75,8 +75,9 @@ body {
 }
 
 #top-container {
-    background-color: rgb(232, 232, 232);
+    background-color: rgb(231, 227, 227);
     justify-content: flex-end;
+    height: 10%;
     padding: 4rem 0rem 2rem 0rem;
 }
 
@@ -101,12 +102,12 @@ label {
 #input-section, .inner-input-sections > div {
     display: flex;
     flex-direction: column;
+    width: 40vw;    
 }
 
 .inner-input-sections {
     display: flex;
     box-sizing: border-box;
-    width: 30%;
 }
 
 .inner-input-sections > div {
@@ -120,12 +121,9 @@ input {
     box-sizing: border-box;
 }
 
-input:focus {
-    border: 1px solid rgb(45, 45, 255);
-    box-shadow: 1px 1px 1px rgb(202, 202, 202);
-}
-
-input:invalid {
+input[type="text"]:focus, input[type="email"]:focus {
+    border: 2px solid blue;
+    box-shadow: 2px 4px 4px rgb(202, 202, 202);
 }
 
 button {
@@ -137,4 +135,8 @@ button {
     color: white;
     box-shadow: 0px 5px 5px rgb(202, 202, 202);
     margin: 1em 0em 2em 0em;
+}
+
+p > a {
+    color: #596D48;
 }

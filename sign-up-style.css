@@ -98,34 +98,34 @@ label {
     box-shadow: 0px 5px 5px rgb(202, 202, 202);
 }
 
-#input-section {
+#input-section, .inner-input-sections > div {
     display: flex;
+    flex-direction: column;
 }
 
 .inner-input-sections {
+    display: flex;
     box-sizing: border-box;
     width: 30%;
 }
 
 .inner-input-sections > div {
-    display: flex;
-    flex-direction: column;
     padding: 1rem 1rem 1rem 0rem;
 }
 
 input {
     border-radius: .2rem;
     height: 30px;
+    border: 1px solid #E5E7EB;
     box-sizing: border-box;
 }
 
-input:invalid {
-    border: 1px solid #E5E7EB;
+input:focus {
+    border: 1px solid rgb(45, 45, 255);
+    box-shadow: 1px 1px 1px rgb(202, 202, 202);
 }
 
-input:active {
-    border: 1px solid rgb(45, 45, 255);
-    box-shadow: inset;
+input:invalid {
 }
 
 button {
